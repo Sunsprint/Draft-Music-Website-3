@@ -1,3 +1,65 @@
+.u-body .u-search-result-container {
+  position: relative;
+  max-width: 200px;
+  font-family: montserrat;
+}
+
+.u-body .u-search-input * {
+  transition: background 0.15s, box-shadow 0.15s;
+}
+
+.u-body .u-search-input, .u-search-result-container {
+  border-radius: 5px;
+}
+
+.u-search-result-container {
+  /* display: flex; */
+  box-sizing: border-box;
+  width: 100%;
+  padding: 6px;
+  background: #333;
+  max-height: 250px;
+  overflow-y: auto;
+  /* visibility: hidden;
+  opacity: 0; */
+  transition: visibility 0.1s, opacity 0.1s;
+}
+
+.u-search-result-container-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.u-search-result, .title, .subtitle {
+  display: block;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 0.6em;
+  cursor: pointer;
+}
+
+.u-search-result:hover {
+  background: #5E5E5E;
+}
+
+.u-search-result:not(:last-of-type) {
+  border-bottom: 1px solid #5E5E5E;
+}
+
+.title {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.paragraph {
+  line-height: 1.5;
+  margin: 8px 0;
+}
+
+
+
+
 .u-section-1 {
   background-image: url("images/er.jpg");
   background-position: 50% 50%;

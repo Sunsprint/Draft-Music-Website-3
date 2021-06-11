@@ -42,7 +42,9 @@
     <meta name="twitter:description" content="Olin Music Site">
   </head>
   <body class="u-body"><header class="u-align-center-xs u-clearfix u-grey-90 u-header u-sticky u-header" id="sec-246e"><div class="u-clearfix u-sheet u-valign-middle-xs u-sheet-1">
-        <form action="#" method="get" class="u-border-1 u-border-grey-15 u-search u-search-right u-search-1">
+        
+    <!--COPY FROM HERE-->
+        <form id="searchPages" autocomplete="off" action="#" method="get" class="u-border-1 u-border-grey-15 u-search u-search-right u-search-1">
           <button class="u-search-button" type="submit">
             <span class="u-search-icon u-spacing-10 u-text-grey-40">
               <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 56.966 56.966" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-b04b"></use></svg>
@@ -51,12 +53,14 @@
           </button>
 
           <!--Searchbar Code Is Here-->
-          <input class="u-search-input" type="search" name="search" value="" placeholder="Search" id="search">
-          <ul class="list-group" id="list"></ul>
-          <script src="searchbar.js"></script>
-
-
+          <input id="search" class="u-search-input" type="search" name="search" value="" placeholder="Search">
         </form>
+
+        <ul id="list" class="u-search-result-container">
+        </ul>
+        <script src="searchbar.js" type="module"></script>
+    <!--COPY END HERE-->
+
         <nav class="u-align-left u-menu u-menu-dropdown u-nav-spacing-25 u-offcanvas u-menu-1" data-responsive-from="MD">
           <div class="menu-collapse u-custom-font u-font-montserrat" style="font-size: 1rem; letter-spacing: 0px; font-weight: 700;">
             <a class="u-button-style u-custom-active-border-color u-custom-border u-custom-border-color u-custom-borders u-custom-hover-border-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link" href="#" style="font-size: calc(1em + 2px); color: rgb(255, 255, 255) !important; height: 18px;">
